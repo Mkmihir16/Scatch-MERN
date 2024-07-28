@@ -62,7 +62,10 @@ const Home = () => {
         </form>
       </div>
     </div>
-      <Link to="/create/product">
+      {/* <Link to="/create/product">
+        <button className='px-4 py-2  bg-gray-400 mt-2'>Button</button>
+      </Link> */}
+       <Link to="/admin">
         <button className='px-4 py-2  bg-gray-400 mt-2'>Button</button>
       </Link>
     </div>
