@@ -54,7 +54,7 @@ router.get('/',(req,res)=>{
                 const token=generateToken(user)
                 res.cookie('token',token)
                return res.send("login successfully")
-            }
+            } 
            return res.send("Password is incorrect")
         })
 

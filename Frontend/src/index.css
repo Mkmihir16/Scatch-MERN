@@ -1,3 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Arsenal+SC:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda+SC:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+button {
+    all: unset;
+  }
+  .login-btnn{
+    background-color: red;
+    box-shadow: 0px 0px 15px 5px red ;
+  }
+  .login-btnn::after { 
+    content: ""; 
+    inset: -.625em; 
+    background: linear-gradient(to bottom right, 
+        rgb(0, 255, 81), rgb(255, 213, 0)); 
+    filter: blur(2.5em); 
+    z-index: -1; 
+} 
+  .btn {
+    
+    cursor: pointer;
+    background-color: rgb(204, 204, 204);
+    color: rgb(6, 6, 6);
+    font-weight: 600;
+    transition: 0.6s;
+    letter-spacing: 2px;
+    /* box-shadow: 0px 0px 20px hsl(232 85% 69% / 0.6); */
+    /* box-shadow: 0px 0px 20px hsl(232 85% 69% / 0.6); */
+   
+}
+
+.btn:active {
+    scale: 0.92;
+}
+.register{
+    box-shadow: 0 0px 15px 2px rgba(210, 210, 210, 0.2);
+}
+.btn:hover {
+    color: rgb(4, 4, 38);
+    -webkit-box-reflect: below 2px
+    linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.4));
+  background: linear-gradient(to right, #ff0606, #ff1e1b, #ff2d2a, #ff3936, #ff4342, #ff4854, #fe4f64, #fb5773, #f36189, #e86c9c, #db77ab, #cc82b5);
+  }
+  .forminput{
+      width: 60%;
+      position: relative;
+    }
+    .forminput input {
+      /* box-shadow: 0 0 2px 5px rgba(9, 8, 8, 0.2); */
+    width: 100%;
+    border-radius: 6px;
+    background-color: transparent;
+    border: 1px solid #333639;
+    outline: none;
+    padding: 10px 10px;
+    color: white;
+    font-size: 18px;
+    font-family: "Roboto";
+  }
+  input::placeholder {
+    opacity: 0;
+  }
+  input + label {
+    position: absolute;
+    top: 20px;
+    left: 10px;
+    color: #71767b;
+    font-size: 15px;
+    pointer-events: none;
+    transition: 200ms ease;
+  }
+  input:focus {
+    outline: 1px solid #1d9bf0;
+  }
+  input:focus + label {
+    color: #1d9bf0;
+  }
+  input:not(:placeholder-shown) + label,
+  input:focus + label {
+    top: 10px;
+    left: 10px;
+    font-size: 12px;
+  }

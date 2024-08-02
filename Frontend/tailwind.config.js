@@ -5,7 +5,12 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily:{
+        Arsenal:['Arsenal SC','sans-serif'],
+        Badoni:["Bodoni Moda SC", "serif"]
+      }
+    },
   },
   plugins: [],
 }
